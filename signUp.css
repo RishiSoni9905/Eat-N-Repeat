@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Preahvihear&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            color:white
+        }
+        body{
+            background-image: url("Images/backgroundImage.jpg");
+            background-size: cover;
+            height:100vh;
+            width:100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width:500px;
+            background-color: rgba(245, 245, 245, 0);
+            border-radius: 20px;
+        }
+        .signUp{
+            padding: 40px;
+        }
+        h3, input{
+            margin:0 0 10px 0;
+        }
+        input{
+            width: 300px;
+            background-color: rgb(202, 198, 198);
+            color:white;
+        }
+        .submitBtn{
+            margin-top:5px;
+            margin-bottom: 60px;
+            height:25px;
+            background-color: rgb(0, 153, 255);
+            color:white;
+            border:none;
+            border-radius: 7px;
+            box-shadow: 2px 2px 5px grey;
+        }
+        .submitBtn:hover{
+            opacity: 0.8;
+            cursor:pointer;
+        }
+        #mail, #password, #name{
+            padding-left: 5px;
+            border: 1px grey solid;
+            border-radius: 5px;
+            height: 25px;
+            outline: none;
+        }
+@media screen and (max-width:768px){
+    body{
+        background-image: url("./Images/forPhone.jpg");
+    }
+}
+@media screen and (min-width:1600px){
+    input{
+        width: 500px;
+        background-color: rgb(202, 198, 198);
+        color:white;
+    }
+    #mail,#password, #name{
+        height:45px;
+    }
+    .submitBtn{
+        margin-top:5px;
+        margin-bottom: 60px;
+        height:45px;
+        background-color: rgb(0, 153, 255);
+        color:white;
+        border:none;
+        border-radius: 7px;
+        box-shadow: 2px 2px 5px grey;
+    }
+    h3,input{
+        font-size: 30px;
+    }
+}
+.logInBtn{
+    margin:10px 5px;
+}
